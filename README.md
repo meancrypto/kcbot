@@ -30,12 +30,4 @@ Special Thanks for this Project go to Sam Hardy for creating the Python Wrapper 
 I got all of the code from.  https://python-kucoin.readthedocs.io/en/latest/
 If you find it useful, consider donating to him.  He has some tokens he accepts with the address on that page.
 
-If you want to donate to someone else as well, consider donating to me. My token addresses can go to:
-LTC:
-TRX:
-XMR:
-ETC:
-BNB:
-RVN:
-
 An easier method is to tip either of us with BAT using the Brave Browser.   Go here (https://brave.com/brave-rewards/)  to read more about earning BAT from seeing ads and tipping others
