@@ -13,16 +13,16 @@ Basic Installation Steps:
 2. From Python, install PIP (Package Installer for Python) if your installation does not include it.
 3. Install the modules/libraries that are needed to access the Kucoin API.  I’ve used the Module that is located here: https://pypi.org/project/python-kucoin/ You can install it by going into your command line and typing in “py -m pip install python-kucoin”
 4. Get your API keys from Kucoin (https://www.kucoin.com/account/api)
-5. Paste your keys into the appropriate spot in your kcbuy.py code.  ***NOTE: DO NOT SHARE YOUR KEYS WITH ANYONE. IF ANYONE ASKS YOU TO SHARE YOUR BOT CODE, DO NOT COPY AND PASTE AND SEND IT TO THEM. DIRECT THEM TO THIS SITE AND LET THEM DOWNLOAD IT ON THEIR OWN***
-6. Run your code: python3 kcbuy.py (Mac and Linux)  or py kcbuy.py (Windows).  You should also be able to just double click on kcbuy.py to run the program with the installed Interpreter.
+5. Paste your keys into the appropriate spot in your pumpkc.py code.  ***NOTE: DO NOT SHARE YOUR KEYS WITH ANYONE. IF ANYONE ASKS YOU TO SHARE YOUR BOT CODE, DO NOT COPY AND PASTE AND SEND IT TO THEM. DIRECT THEM TO THIS SITE AND LET THEM DOWNLOAD IT ON THEIR OWN***
+6. Run your code: python3 pumpkc.py (Mac and Linux)  or py pumpkc.py (Windows).  You should also be able to just double click on kcbuy.py to run the program with the installed Interpreter.
 
 Here’s what the basic program does:
 1. Sends a request to Kucoin at program start to download the current price of ALL pairings and stores them for future use.  This is so you can set the price for a Limit Order when the coin is actually announced without having to read current prices.
 2. It waits until you enter in the short symbol for your coin (example: DOGE).  This can be upper or lower case
-3. The program then calculates how many tokens to buy based on the price you set as a multiplier of the price when the program is started as well as the dollar amount you want to risk.
+3. The program then calculates how many tokens to buy based on the price you set as a multiplier of the price when the program is started as well as the dollar amount you want to risk. For example, if you are risking $50, DOGE has current value of .50 and you've set a multiplier of 1.3, it will set a limit order of 0.65 (1.3 x 0.50) and will try to buy 76.9 tokens (50/0.65)
 4. A buy order is sent in based on your parameters
 5. At this point, you should switch to your browser so you can monitor progress and handle your buy orders.
-6. An option will be given to Market Order sell all of your current tokens.  This will make a quick request to Kucoin to find out how many tokens you have and then will try to sell them.
+6. An option has been added to get your current available tokens.  You can use this number to then execute a market order or limit order to sell the number of available tokens.  If you want to add a socket connection, you could read in the trades to see current prices and sell then, or you can just watch the candles on the browser and decide when to limit/market sell.
 
 
 
